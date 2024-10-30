@@ -52,7 +52,7 @@ main {
     gap: 20px;
 }
 
-.about, .location, .resources{
+.card, .location, .resources{
     background-color: #e6f1f4;
     padding: 20px;
     border-radius: 10px;
@@ -60,18 +60,18 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about h2, .resources h2, .location h3 {
+.card h2, .resources h2, .location h3 {
     text-align: center;
     color: #2a4a5b;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.about p, .location p {
+.card p, .location p {
     margin-bottom: 15px;
 }
 
-.about img, .location img {
+.card img, .location img {
     display: block;
     margin: 10px auto;
     border-radius: 10px;
