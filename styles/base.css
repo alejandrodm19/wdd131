@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #274a64;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+header .highlight {
+    color: #f4d300;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #3e3e3e;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about, .location, .resources{
+    background-color: #e6f1f4;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #0073a8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2, .resources h2, .location h3 {
+    text-align: center;
+    color: #2a4a5b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about p, .location p {
+    margin-bottom: 15px;
+}
+
+.about img, .location img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 100px;
+}
+
+.location {
+    background-color: white;
+}
+
+.caption{
+    text-align: center;
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 10px;
+    display: block;
+}
+
+.resources ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources ul li{
+    margin: 5px 0;
+}
+
+.resources ul li a{
+    color: #0073a8;
+    text-decoration: none;
+}
+
+.resources ul li a:hover{
+    text-decoration: underline;
+}
+
+.location-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.location img {
+    width: 80px;
+    height: auto;
+}
+
+.location p {
+    text-align: left;
+}
+
+footer {
+    background-color: #274a64;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+    border-top: 2px solid #ccc;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
