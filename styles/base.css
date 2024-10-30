@@ -37,6 +37,11 @@ nav a {
     padding: 5px 10px;
 }
 
+nav :hover{
+    color:#f4d300;
+    text-decoration: underline;
+}
+
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
