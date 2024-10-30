@@ -7,8 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     display: grid;
-    grid-template-columns: 3fr 1fr; 
-    grid-template-rows: auto auto 1fr auto; 
+    grid-template-columns: 3fr 1fr; /* 3:1 ratio for main and aside columns */
+    grid-template-rows: auto 1fr auto; /* Header, main+aside, footer */
     min-height: 100vh;
 }
 
@@ -18,15 +18,18 @@ header {
     padding: 20px;
     text-align: left;
     font-weight: bold;
-    grid-column: 1 / span 2; 
+    grid-column: 1 / span 2; /* Header spans both columns */
+}
+
+header h1 {
+    margin-bottom: 10px;
 }
 
 nav {
-    background-color: #111;
     display: flex;
     justify-content: space-around;
+    background-color: #111;
     padding: 10px;
-    grid-column: 1 / span 2; 
 }
 
 nav a {
@@ -38,13 +41,13 @@ nav a {
 main {
     background-color: #d3d3d3;
     padding: 20px;
-    grid-column: 1 / 2; 
+    grid-column: 1 / 2; /* Main content occupies the first column */
 }
 
 aside {
     background-color: white;
     padding: 20px;
-    grid-column: 2 / 3; 
+    grid-column: 2 / 3; /* Aside occupies the second column */
 }
 
 footer {
@@ -52,5 +55,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    grid-column: 1 / span 2; 
+    grid-column: 1 / span 2; /* Footer spans both columns */
 }
