@@ -11,16 +11,18 @@
     <title>Place Country Activity</title>
 </head>
 <body>
-    <header>Venezuela</header>
+    <header>
+        <h1>Venezuela</h1>
+    </header>
     <main>
-        <section class="hero">
+        <section class="hero-section">
             <picture>
-                <source srcset="images/venezuela-largue(1).webp" media="(min-width: 768px)">
-                <img src="images/venezuela-small.webp" alt="">
+                <source srcset="images/venezuela-largue2.webp" media="(min-width:768px)">
+                <img src="images/venezuela-small.webp" alt="Venezuelan Monkeys">
             </picture>
         </section>
         <section class="info">
-            <div class="data">
+            <div class="data-box">
                 <h2>Data</h2>
                 <ul>
                     <li><strong>Area:</strong>916,445 km2</li>
@@ -33,8 +35,9 @@
                     <li><strong>Internet TLD:</strong>.ve</li>
                 </ul>
             </div>
-            <div class="weather">
+            <div class="weather-box">
                 <h2>Weather</h2>
+                <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" height="64" width="64" alt="weather" alt="">
                 <ul>
                     <li><strong>Temperature:</strong>35°C</li>
                     <li><strong>Conditions:</strong>Dry</li>
@@ -43,12 +46,12 @@
                 </ul>
             </div>
         </section>
-        <footer>
-            <p>© <span id="year"></span>Alejandro Malvacias</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
-        </footer>
-        <script src="scripts/place.js"></script>
     </main>
+    <footer>
+        <p>© <span id="currentyear"></span>Alejandro Malvacias</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/place.js"></script>
 
 </body>
 </html>
