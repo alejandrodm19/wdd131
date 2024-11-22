@@ -63,4 +63,20 @@
         width: 100%;
         position: relative;
     }
+
+    .weather-box h2::after {
+        content: "☀️";
+        margin-left: 0.5rem; 
+        font-size: 1.5rem; 
+        vertical-align: middle; 
+        color: white; 
+    }
+    .data-box h2::after {
+        content: "📊"; /* Puedes cambiar este emoji o ícono Unicode por el que prefieras */
+        margin-left: 0.5rem; /* Espaciado entre el título y el ícono */
+        font-size: 1.5rem; /* Tamaño del ícono */
+        vertical-align: middle; 
+        color: white; 
+    }
+
 }
