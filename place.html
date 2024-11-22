@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Malvacias">
+    <meta name="description" content="Place Country Activity">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-largue.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"       rel="stylesheet">
+    <title>Place Country Activity</title>
+</head>
+<body>
+    <header>Venezuela</header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/venezuela-largue(1).webp" media="(min-width: 768px)">
+                <img src="images/venezuela-small.webp" alt="">
+            </picture>
+        </section>
+        <section class="info">
+            <div class="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong>916,445 km2</li>
+                    <li><strong>Population:</strong>29 Million</li>
+                    <li><strong>Capital:</strong>Caracas</li>
+                    <li><strong>Languages:</strong>Spanish</li>
+                    <li><strong>Currency:</strong>Bolivar</li>
+                    <li><strong>Time Zone:</strong>UTC-4</li>
+                    <li><strong>Calling Code:</strong>+58</li>
+                    <li><strong>Internet TLD:</strong>.ve</li>
+                </ul>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <ul>
+                    <li><strong>Temperature:</strong>35°C</li>
+                    <li><strong>Conditions:</strong>Dry</li>
+                    <li><strong>Wind:</strong></li>
+                    <li><strong>Wind Chill:</strong><span id="windchill">N/A</span></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>© <span id="year"></span>Alejandro Malvacias</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+        <script src="scripts/place.js"></script>
+    </main>
+
+</body>
+</html>
