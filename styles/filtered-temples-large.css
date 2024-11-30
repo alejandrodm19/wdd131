@@ -1,23 +1,13 @@
-@media only screen and (min-width: 32rem) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 1rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    .gallery img {
-        width: 100%;
-        height: 200px; 
-        object-fit: cover; 
-        border-radius: 5px; 
+@media only screen and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        gap: 1rem;
     }
 
     #menu {
@@ -29,14 +19,12 @@
         display: none;
     }
 
-    figure {
-        margin: 0;
-        text-align: center;
+    #temple-container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2.5rem;
     }
 
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
+    .card img {
+        height: 250px;
     }
 }
