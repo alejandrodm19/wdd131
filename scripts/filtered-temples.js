@@ -100,10 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Mostrar todos los templos al cargar la página
+
   displayTemples(temples);
 
-  // Funciones para filtrar templos
   document
     .getElementById("home")
     .addEventListener("click", () => displayTemples(temples));
@@ -128,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
     displayTemples(smallTemples);
   });
 
-  // Actualizar el footer
+
   document.getElementById("currentyear").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = document.lastModified;
 });
