@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Malvacias">
+    <meta name="description" content="Product Review Form">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Product Review Form</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div>
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">☆</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2">☆☆</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3">☆☆☆</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4">☆☆☆☆</label>
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5">☆☆☆☆☆</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installationDate" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features did you find useful?</legend>
+                <div>
+                    <input type="checkbox" id="durability" name="features" value="Durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ease" name="features" value="Ease of Use">
+                    <label for="ease">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="performance" name="features" value="Performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="design" name="features" value="Design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="review">Written Review (Optional)</label>
+                <textarea id="review" name="review" rows="4"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="username">Your Name (Optional)</label>
+                <input type="text" id="username" name="username">
+            </fieldset>
+
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Alejandro Malvacias</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+</html>
